@@ -1,0 +1,38 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  display: none;
+}
+
+.custom-radios {
+  
+  div {
+    display: inline-block;
+  }
+
+  input[type="radio"] {
+
+    + label {
+
+      span {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 44px;
+    
+        transition: all .5s ease;
+      }
+    }
+
+    &:checked + label span {
+      border-radius: 10%;
+    }
+  }
+}

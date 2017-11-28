@@ -1,0 +1,14 @@
+<div class="custom-radios flex-container">
+  <div *ngFor="let color of colors; index as i">
+    <input type="radio"
+      id="color-{{i+1}}"
+      name="radio-color"
+      [value]="color.label"
+      [checked]="selectedColor === color"
+      (change)="selectColor(color)">
+    <label for="color-{{i+1}}">
+        <span [ngStyle]="{'background-color': color.css}">
+        </span>
+      </label>
+  </div>
+</div>
