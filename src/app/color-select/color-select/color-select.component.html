@@ -1,0 +1,15 @@
+<div class="flex-container">
+  <div class="radio-group" *ngFor="let color of colors; index as i">
+    <input type="radio" id="color-{{i+1}}" name="radio-color" class="sr-only" [value]="color.label" [checked]="selectedColor === color"
+      (change)="selectColor(color)">
+    <label for="color-{{i+1}}">
+        <span class="sr-only">{{color.label}}</span>
+        <span [ngStyle]="{'background-color': color.css}">
+            <svg fill="#FFFFFF" viewBox="0 0 24 24" *ngIf="selectedColor === color">
+              <svg:path d="M0 0h24v24H0z" fill="none"/>
+              <svg:path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+          </svg>
+        </span>
+      </label>
+  </div>
+</div>

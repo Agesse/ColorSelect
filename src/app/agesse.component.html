@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Liste des composants</h1>
+  <h2>Color Select</h2>
+  <div class="row">
+    <agesse-color-select class="three columns" [colors]="colors" #colorSelect></agesse-color-select>
+
+    <div class="nine columns result">
+      <h3>Utilisation</h3>
+      <p>
+        &lt;agesse-color-select [colors]="INPUT" #OUTPUT&gt;&lt;/agesse-color-select&gt;
+      </p>
+      <h3>Resultat</h3>
+      <label for="label">OUTPUT.selectedColor.label</label>
+      <input class="u-full-width" type="text" [value]="colorSelect.selectedColor.label" id="label">
+      <label for="css">OUTPUT.selectedColor.css</label>
+      <input class="u-full-width" type="text" [value]="colorSelect.selectedColor.css" id="css">
+    </div>
+  </div>
+</div>

@@ -1,27 +1,39 @@
-# ColorSelect
+NGAgesse project
+==============
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.4.
+Projet contenant diverses librairies et utilitaires Angular 5.
+Pour l'utiliser :
 
-## Development server
+    npm i
+    ng serve
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* * *
 
-## Code scaffolding
+color-select
+------------
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Permet de selectionner une couleur parmi une liste de couleurs donnees par le parent.
 
-## Build
+### Utilisation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+    <agesse-color-select [colors]="INPUT" #OUTPUT><agesse-color-select>
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Options
 
-## Running end-to-end tests
+#### Inputs
+* colors: tableau des couleurs (objet {label: "", css: ""}) **obligatoire**
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+#### Outputs
+* OUTPUT.selectedColor: objet couleur selectionne
 
-## Further help
+* * * 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+material-colors
+---------------
+
+Constantes representant les couleurs Material Design.
+
+### Liste des constantes
+
+* COLOR_BASICS: correspond aux valeurs 500 des couleurs Material Design
