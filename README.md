@@ -2,6 +2,10 @@ NGAgesse project
 ==============
 
 Projet contenant diverses librairies et utilitaires Angular 5.
+Pour l'utiliser :
+
+    npm i
+    ng serve
 
 * * *
 
