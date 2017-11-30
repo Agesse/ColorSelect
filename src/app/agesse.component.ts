@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { Colors } from "./class/colors";
+import { COLOR_BASICS } from "./const/material-colors.const";
 
 @Component({
   selector: "agesse-main",
@@ -8,17 +9,6 @@ import { Colors } from "./class/colors";
 })
 export class AgesseComponent {
 
-  colors: Colors[] = [{
-    label: "green",
-    css: "#2ecc71"
-  },
-  {
-    label: "blue",
-    css: "#3498db"
-  },
-  {
-    label: "yellow",
-    css: "#f1c40f"
-  }];
+  colors: Colors[] = COLOR_BASICS;
 
 }

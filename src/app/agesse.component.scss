@@ -1,5 +1,36 @@
-agesse-color-select .flex-container {
-  background: grey;
-  width: 200px;
-  height: 500px;
+.container {
+  background: #F5F5F5;
+  color: #B0BEC5;
+}
+
+.row {
+  padding: 2rem;
+}
+
+h1 {
+  background: #B0BEC5;
+  color: white;
+  padding: 2rem;
+}
+
+h2 {
+  padding: 0 2rem;
+  margin: 0;
+}
+
+.columns {
+  background: white;
+  padding: 1rem;
+}
+
+p {
+  background: #F1F1F1;
+  color: #78909C;
+  padding: 3px;
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+}
+
+label {
+  color: #78909C;
 }

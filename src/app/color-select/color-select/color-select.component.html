@@ -1,13 +1,13 @@
 <div class="custom-radios flex-container">
-  <div *ngFor="let color of colors; index as i">
-    <input type="radio"
-      id="color-{{i+1}}"
-      name="radio-color"
-      [value]="color.label"
-      [checked]="selectedColor === color"
-      (change)="selectColor(color)">
+  <div *ngFor="let color of colors; index as i" role="radiogroup">
+    <input type="radio" id="color-{{i+1}}" name="radio-color" [value]="color.label" [checked]="selectedColor === color" (change)="selectColor(color)">
     <label for="color-{{i+1}}">
         <span [ngStyle]="{'background-color': color.css}">
+            <svg role="image" aria-label="check icon" fill="#FFFFFF" viewBox="0 0 24 24" *ngIf="selectedColor === color">
+              <title>Check icon</title>
+              <svg:path d="M0 0h24v24H0z" fill="none"/>
+              <svg:path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+          </svg>
         </span>
       </label>
   </div>

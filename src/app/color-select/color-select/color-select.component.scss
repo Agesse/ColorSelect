@@ -1,6 +1,7 @@
 .flex-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 input {
@@ -13,6 +14,18 @@ input {
     display: inline-block;
   }
 
+  svg {
+    height: 100%;
+    width: 100%;
+    animation: showSvg;
+    animation-duration: .5s;
+  }
+
+  @keyframes showSvg {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
   input[type="radio"] {
 
     + label {
@@ -23,6 +36,7 @@ input {
         height: 40px;
         vertical-align: middle;
         cursor: pointer;
+        border: 3px solid white;
         border-radius: 50%;
         text-align: center;
         line-height: 44px;
@@ -32,7 +46,8 @@ input {
     }
 
     &:checked + label span {
-      border-radius: 10%;
+      border-radius: 20%;
+      transform: scale(.6, .6);
     }
   }
 }
