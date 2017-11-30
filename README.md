@@ -1,4 +1,4 @@
-NGagesse project
+NGAgesse project
 ==============
 
 Projet contenant diverses librairies et utilitaires Angular 5.
