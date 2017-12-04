@@ -45,6 +45,9 @@ input {
   }
 }
 
-input:focus + label {
-  outline: 5px auto -webkit-focus-ring-color;
+input:focus + label > span,
+input:hover + label > span {
+  //outline: 5px auto -webkit-focus-ring-color;
+  transform: scale(.6, .6);
+  border-color: rgba(0, 0, 0, .2);
 }

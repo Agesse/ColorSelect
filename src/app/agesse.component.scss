@@ -1,6 +1,8 @@
 .container {
-  background: #F5F5F5;
-  color: #B0BEC5;
+  background: #ECEFF1;
+  color: #546E7A;
+  border: 1px solid #CFD8DC;
+  border-radius: 5px;
 }
 
 .row {
@@ -8,7 +10,7 @@
 }
 
 h1 {
-  background: #B0BEC5;
+  background: #78909C;
   color: white;
   padding: 2rem;
 }
@@ -20,17 +22,14 @@ h2 {
 
 .columns {
   background: white;
+  border-radius: 5px;
+  border: 1px solid #CFD8DC;
   padding: 1rem;
 }
 
 p {
-  background: #F1F1F1;
-  color: #78909C;
+  background: #ECEFF1;
   padding: 3px;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #CFD8DC;
   border-radius: 5px;
-}
-
-label {
-  color: #78909C;
 }
