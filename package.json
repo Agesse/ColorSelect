@@ -6,7 +6,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "git": "ng build --prod --output-path docs --base-href NGAgesse"
   },
   "repository": {
     "type": "git",
