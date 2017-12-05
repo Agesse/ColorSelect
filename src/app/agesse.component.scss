@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .container {
-  background: #ECEFF1;
-  color: #546E7A;
-  border: 1px solid #CFD8DC;
+  color: #616161;
   border-radius: 5px;
+  border: 1px solid #ddd;
+  font-family: 'Roboto', sans-serif;
+  background: #eee;
+}
+
+svg {
+  float: right;
 }
 
 .row {
@@ -10,26 +17,33 @@
 }
 
 h1 {
-  background: #78909C;
+  background: #ec407a;
   color: white;
   padding: 2rem;
 }
 
 h2 {
+  color: #ec407a;
   padding: 0 2rem;
   margin: 0;
 }
 
-.columns {
-  background: white;
-  border-radius: 5px;
-  border: 1px solid #CFD8DC;
-  padding: 1rem;
+h3 {
+  color: #ec407a;
 }
 
-p {
-  background: #ECEFF1;
+.columns {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  background: #fff;
+}
+
+.code {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 12px;
+  background: #616161;
+  color: whitesmoke;
   padding: 3px;
-  border: 1px solid #CFD8DC;
   border-radius: 5px;
 }
