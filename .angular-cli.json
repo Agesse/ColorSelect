@@ -8,8 +8,7 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
-        "assets",
-        "favicon.ico"
+        "assets"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -19,25 +18,12 @@
       "styles": [
         "styles.scss"
       ],
-      "scripts": [],
-      "environmentSource": "environments/environment.ts",
-      "environments": {
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
-      }
+      "scripts": []
     }
   ],
   "lint": [
     {
       "project": "src/tsconfig.app.json",
-      "exclude": "**/node_modules/**"
-    },
-    {
-      "project": "src/tsconfig.spec.json",
-      "exclude": "**/node_modules/**"
-    },
-    {
-      "project": "e2e/tsconfig.e2e.json",
       "exclude": "**/node_modules/**"
     }
   ],

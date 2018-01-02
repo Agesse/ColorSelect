@@ -1,18 +1,17 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
-
 import { AgesseComponent } from "./agesse.component";
-import { ColorSelectComponent } from "./color-select/color-select/color-select.component";
+import { ColorSelectModule } from "./modules/color-select/color-select.module";
 
 
 @NgModule({
   declarations: [
-    AgesseComponent,
-    ColorSelectComponent
+    AgesseComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ColorSelectModule
   ],
   providers: [],
   bootstrap: [AgesseComponent],

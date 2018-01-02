@@ -1,0 +1,64 @@
+.flex-container {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+
+.radio-group {
+ display: inline-block;
+}
+
+svg {
+ height: 100%;
+ width: 100%;
+ animation: showSvg;
+ animation-duration: .5s;
+}
+
+@keyframes showSvg {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+}
+
+input {
+ +label {
+  span {
+   display: inline-block;
+   width: 40px;
+   height: 40px;
+   vertical-align: middle;
+   cursor: pointer;
+   border: 3px solid white;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 44px;
+   transition: all .5s ease;
+  }
+ }
+ &:checked+label span {
+  border-radius: 20%;
+  transform: scale(.6, .6);
+ }
+}
+
+input:focus+label>span,
+input:hover+label>span {
+ //outline: 5px auto -webkit-focus-ring-color;
+ transform: scale(.6, .6);
+ border-color: rgba(0, 0, 0, .2);
+}
+
+.sr-only {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ padding: 0;
+ margin: -1px;
+ overflow: hidden;
+ clip: rect(0, 0, 0, 0);
+ border: 0;
+}
