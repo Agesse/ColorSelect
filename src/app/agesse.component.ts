@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
-import { Colors } from "./class/colors";
-import { COLOR_BASICS } from "./const/material-colors.const";
+import { Colors } from "./modules/commons/class/colors";
+import { COLOR_BASICS } from "./modules/commons/const/material-colors.const";
 
 @Component({
   selector: "agesse-main",

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
-import { Colors } from "../../class/colors";
+import { Colors } from "../commons/class/colors";
 
 @Component({
   selector: "agesse-color-select",
