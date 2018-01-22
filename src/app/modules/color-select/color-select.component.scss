@@ -37,6 +37,11 @@ input {
    text-align: center;
    line-height: 44px;
    transition: all .5s ease;
+
+   &.white {
+     border-color: grey;
+     transform: scale(.9, .9);
+   }
   }
  }
  &:checked+label span {
@@ -50,6 +55,10 @@ input:hover+label>span {
  //outline: 5px auto -webkit-focus-ring-color;
  transform: scale(.6, .6);
  border-color: rgba(0, 0, 0, .2);
+
+  &.white {
+    border-color: grey;
+  }
 }
 
 .sr-only {

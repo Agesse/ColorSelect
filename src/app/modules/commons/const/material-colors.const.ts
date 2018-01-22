@@ -2,6 +2,14 @@ import { Colors } from "../class/colors";
 
 export const COLOR_BASICS: Colors[] = [
   {
+    label: "white",
+    css: "#fff"
+  },
+  {
+    label: "black",
+    css: "#000"
+  },
+  {
     label: "red",
     css: "#f44336"
   },
