@@ -22,7 +22,7 @@ export const COLOR_BASICS: Colors[] = [
     css: "#9C27B0"
   },
   {
-    label: "deep purple",
+    label: "deep-purple",
     css: "#673AB7"
   },
   {
@@ -34,7 +34,7 @@ export const COLOR_BASICS: Colors[] = [
     css: "#3498db"
   },
   {
-    label: "light blue",
+    label: "light-blue",
     css: "#03A9F4"
   },
   {
@@ -50,7 +50,7 @@ export const COLOR_BASICS: Colors[] = [
     css: "#4CAF50"
   },
   {
-    label: "light green",
+    label: "light-green",
     css: "#8BC34A"
   },
   {
@@ -70,7 +70,7 @@ export const COLOR_BASICS: Colors[] = [
     css: "#FF9800"
   },
   {
-    label: "deep orange",
+    label: "deep-orange",
     css: "#FF5722"
   },
   {
@@ -82,6 +82,6 @@ export const COLOR_BASICS: Colors[] = [
     css: "#9E9E9E"
   },
   {
-    label: "blue grey",
+    label: "blue-grey",
     css: "#607D8B"
   }];
