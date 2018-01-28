@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule, ModuleWithProviders } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { ColorSelectComponent } from "./color-select.component";
 
@@ -11,4 +11,11 @@ import { ColorSelectComponent } from "./color-select.component";
   ],
   exports: [ColorSelectComponent]
 })
-export class ColorSelectModule { }
+export class ColorSelectModule {
+  public static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: ColorSelectModule,
+      providers: []
+    };
+  }
+}

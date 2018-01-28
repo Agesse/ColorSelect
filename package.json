@@ -1,11 +1,11 @@
 {
-  "name": "@ng-agesse/core",
-  "version": "1.0.0",
+  "name": "@agesse/core",
+  "version": "1.0.2",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "lint": "ng lint",
     "git": "ng build --prod --output-path docs --base-href NGAgesse",
     "package": "ng-packagr -p ng-package.json && cd dist/ && npm pack"
@@ -37,6 +37,15 @@
     "node-sass": "^4.7.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
-    "typescript": "~2.6.1"
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "@angular/common": "^5.2.1",
+    "@angular/compiler": "^5.0.3",
+    "@angular/core": "^5.2.1",
+    "@angular/forms": "^5.2.1",
+    "@angular/http": "^5.2.1",
+    "@angular/platform-browser": "^5.2.1",
+    "@angular/platform-browser-dynamic": "^5.2.1"
   }
 }

@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule, ModuleWithProviders } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @NgModule({
@@ -7,6 +7,13 @@ import { CommonModule } from "@angular/common";
   ],
   declarations: []
 })
-export class CommonsModule { }
+export class CommonsModule {
+  public static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: CommonsModule,
+      providers: []
+    };
+  }
+}
 export * from "./class/colors";
 export * from "./const/material-colors.const";
